@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AlarmApp</string>
+    <string name="title_alarmas">Alarmas</string>
+    <string name="title_create_alarm">Crear alarma</string>
+    <string name="title_calendario">Calendario</string>
+    <string name="title_mapas">Mapas</string>
+    <string name="button_create_alarm">Alarma</string>
+    <string name="title_create_account">Crear Cuenta</string>
+    <string name="description_create_alarm">Crear alarma</string>
+    <string name="title_welcome">Bienvenido</string>
+    <string name="description_welcome1">Todavía no tienes alarmas, crea tu primera alarma y empieza a gozar de las funcionalidades que tenemos para ti.</string>
+    <string name="description_welcome2">Inicia sesión o crea una cuenta para disfrutar de funcionalidades exclusivas para nuestra aplicación web.</string>
+    <string name="notification_title_success">Correcto</string>
+    <string name="notification_create_alarm">La alarma ha sido creada satisfactoriamente.</string>
+    <string name="notification_title_restricted">Acceso restringido</string>
+    <string name="image_restricted_descripton">Acceso restringido</string>
+    <string name="notification_calendar_restricted">Inicia sesión o crea una cuenta para disfrutar de la funcionalidad de Calendario en nuestra aplicación web.</string>
+    <string name="notification_map_restricted">Inicia sesión o crea una cuenta para disfrutar de la funcionalidad de Mapa en nuestra aplicación web, para tener una visión global de todas tus alarmas.</string>
+</resources>

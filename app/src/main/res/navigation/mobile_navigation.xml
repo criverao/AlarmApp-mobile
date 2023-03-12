@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_alarms">
+
+    <fragment
+        android:id="@+id/navigation_alarms"
+        android:name="com.example.alarmapp.ui.alarms.AlarmsFragment"
+        android:label="@string/title_alarmas"
+        tools:layout="@layout/fragment_alarms">
+
+        <action
+            android:id="@+id/action_create_alarm"
+            app:destination="@id/create_alarm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_alarm"
+        android:name="com.example.alarmapp.ui.alarms.CreateAlarmFragment"
+        android:label="@string/title_create_alarm"
+        tools:layout="@layout/fragment_create_alarm" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.alarmapp.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendario"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.example.alarmapp.ui.maps.MapsFragment"
+        android:label="@string/title_mapas"
+        tools:layout="@layout/fragment_maps" />
+
+</navigation>
