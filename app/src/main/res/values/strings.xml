@@ -5,6 +5,7 @@
     <string name="title_calendar">Calendario</string>
     <string name="title_maps">Mapas</string>
     <string name="title_login">Iniciar sesión</string>
+    <string name="title_delete_alarm">Eliminar alarma</string>
     <string name="button_create_alarm">Alarma</string>
     <string name="title_create_account">Crear Cuenta</string>
     <string name="description_create_alarm">Crear alarma</string>
@@ -19,6 +20,7 @@
     <string name="notification_map_restricted">Inicia sesión o crea una cuenta para disfrutar de la funcionalidad de Mapa en nuestra aplicación web, para tener una visión global de todas tus alarmas.</string>
     <string name="notification_warning">Advertencia</string>
     <string name="notification_redirect_login">A continuación se abrirá un enlace en el navegador para que inicies sesión en nuestra aplicación web.</string>
+    <string name="notification_delete_alarm">¿Realmente desea eliminar esta alarma? Por favor confirme</string>
     <string name="form_alarm_name">Titulo de la alarma</string>
     <string name="alarm_date_label">Fecha:</string>
     <string name="alarm_date">Fecha</string>

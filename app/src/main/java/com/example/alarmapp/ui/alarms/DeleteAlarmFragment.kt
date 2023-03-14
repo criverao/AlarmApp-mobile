@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.alarmapp.R
-import com.example.alarmapp.databinding.FragmentAlarmsBinding
+import com.example.alarmapp.databinding.FragmentDeleteAlarmBinding
 
-class AlarmsFragment : Fragment() {
+class DeleteAlarmFragment : Fragment() {
 
-    private var _binding: FragmentAlarmsBinding? = null
+    private var _binding: FragmentDeleteAlarmBinding? = null
 
     private val binding get() = _binding!!
 
@@ -20,12 +20,15 @@ class AlarmsFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentAlarmsBinding.inflate(inflater, container, false)
+        _binding = FragmentDeleteAlarmBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.deleteButton.setOnClickListener {
-            findNavController().navigate(R.id.action_delete_alarm)
+        binding.acceptButton.setOnClickListener {
+            findNavController().navigate(R.id.action_accept)
+        }
+
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_cancel)
         }
 
         return root

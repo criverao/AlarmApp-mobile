@@ -42,7 +42,11 @@
         android:id="@+id/alarms_list"
         android:name="com.example.alarmapp.ui.alarms.AlarmsFragment"
         android:label="@string/title_alarms"
-        tools:layout="@layout/fragment_alarms" />
+        tools:layout="@layout/fragment_alarms">
+        <action
+            android:id="@+id/action_delete_alarm"
+            app:destination="@id/navigation_delete_alarm" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_calendar"
@@ -72,6 +76,19 @@
         <action
             android:id="@+id/action_cancel"
             app:destination="@id/navigation_alarms" />
+        <action
+            android:id="@+id/action_accept"
+            app:destination="@id/navigation_alarms" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_delete_alarm"
+        android:name="com.example.alarmapp.ui.alarms.DeleteAlarmFragment"
+        android:label="@string/title_delete_alarm"
+        tools:layout="@layout/fragment_delete_alarm">
+        <action
+            android:id="@+id/action_cancel"
+            app:destination="@id/alarms_list" />
         <action
             android:id="@+id/action_accept"
             app:destination="@id/navigation_alarms" />
