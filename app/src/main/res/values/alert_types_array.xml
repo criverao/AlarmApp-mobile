@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_types_array">
+        <item>Ninguna</item>
+        <item>A la hora del evento</item>
+        <item>5 minutos antes</item>
+        <item>10 minutos antes</item>
+    </string-array>
+</resources>

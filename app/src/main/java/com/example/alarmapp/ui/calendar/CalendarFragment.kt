@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.alarmapp.R
 import com.example.alarmapp.databinding.FragmentCalendarBinding
 
 class CalendarFragment : Fragment() {
@@ -22,16 +22,13 @@ class CalendarFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-        val calendarViewModel =
-                ViewModelProvider(this).get(CalendarViewModel::class.java)
-
         _binding = FragmentCalendarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textCalendario
-        /*calendarioViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }*/
+        binding.createAccountButton.setOnClickListener {
+            findNavController().navigate(R.id.action_login)
+        }
+
         return root
     }
 

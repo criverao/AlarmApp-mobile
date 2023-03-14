@@ -1,4 +1,4 @@
-package com.example.alarmapp.ui.maps
+package com.example.alarmapp.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,14 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.alarmapp.R
-import com.example.alarmapp.databinding.FragmentMapsBinding
+import com.example.alarmapp.databinding.FragmentLoginBinding
 
-class MapsFragment : Fragment() {
+class LoginFragment : Fragment() {
 
-    private var _binding: FragmentMapsBinding? = null
+    private var _binding: FragmentLoginBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,11 +20,15 @@ class MapsFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentMapsBinding.inflate(inflater, container, false)
+        _binding = FragmentLoginBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.createAccountButton.setOnClickListener {
-            findNavController().navigate(R.id.action_login)
+        binding.acceptButton.setOnClickListener {
+            findNavController().navigate(R.id.action_accept)
+        }
+
+        binding.cancelButton.setOnClickListener {
+            findNavController().navigate(R.id.action_cancel)
         }
 
         return root

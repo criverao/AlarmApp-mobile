@@ -68,13 +68,15 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/create_account_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/white"
                 android:text="@string/title_create_account"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/input_hint"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 

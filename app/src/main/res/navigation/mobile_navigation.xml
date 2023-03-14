@@ -8,9 +8,9 @@
 
     <fragment
         android:id="@+id/navigation_alarms"
-        android:name="com.example.alarmapp.ui.alarms.AlarmsFragment"
-        android:label="@string/title_alarmas"
-        tools:layout="@layout/fragment_alarms">
+        android:name="com.example.alarmapp.ui.alarms.WelcomeFragment"
+        android:label="@string/title_alarms"
+        tools:layout="@layout/fragment_welcome">
 
         <action
             android:id="@+id/action_create_alarm"
@@ -21,18 +21,61 @@
         android:id="@+id/create_alarm"
         android:name="com.example.alarmapp.ui.alarms.CreateAlarmFragment"
         android:label="@string/title_create_alarm"
-        tools:layout="@layout/fragment_create_alarm" />
+        tools:layout="@layout/fragment_create_alarm">
+
+        <action
+            android:id="@+id/action_create_alarm"
+            app:destination="@id/create_alarm_success_notification" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_alarm_success_notification"
+        android:name="com.example.alarmapp.ui.alarms.AlarmCreatedFragment"
+        android:label="@string/title_create_alarm"
+        tools:layout="@layout/fragment_success_notification" >
+        <action
+            android:id="@+id/action_alarm_created"
+            app:destination="@id/alarms_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/alarms_list"
+        android:name="com.example.alarmapp.ui.alarms.AlarmsFragment"
+        android:label="@string/title_alarms"
+        tools:layout="@layout/fragment_alarms" />
 
     <fragment
         android:id="@+id/navigation_calendar"
         android:name="com.example.alarmapp.ui.calendar.CalendarFragment"
-        android:label="@string/title_calendario"
-        tools:layout="@layout/fragment_calendar" />
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_maps"
         android:name="com.example.alarmapp.ui.maps.MapsFragment"
-        android:label="@string/title_mapas"
-        tools:layout="@layout/fragment_maps" />
+        android:label="@string/title_maps"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.alarmapp.ui.LoginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_cancel"
+            app:destination="@id/navigation_alarms" />
+        <action
+            android:id="@+id/action_accept"
+            app:destination="@id/navigation_alarms" />
+    </fragment>
+
 
 </navigation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_repeats_array">
+        <item>Nunca</item>
+        <item>Cada semana</item>
+        <item>Cada mes</item>
+        <item>Cada año</item>
+    </string-array>
+</resources>

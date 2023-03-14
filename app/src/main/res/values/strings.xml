@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">AlarmApp</string>
-    <string name="title_alarmas">Alarmas</string>
+    <string name="title_alarms">Alarmas</string>
     <string name="title_create_alarm">Crear alarma</string>
-    <string name="title_calendario">Calendario</string>
-    <string name="title_mapas">Mapas</string>
+    <string name="title_calendar">Calendario</string>
+    <string name="title_maps">Mapas</string>
+    <string name="title_login">Iniciar sesión</string>
     <string name="button_create_alarm">Alarma</string>
     <string name="title_create_account">Crear Cuenta</string>
     <string name="description_create_alarm">Crear alarma</string>
@@ -16,4 +17,16 @@
     <string name="image_restricted_descripton">Acceso restringido</string>
     <string name="notification_calendar_restricted">Inicia sesión o crea una cuenta para disfrutar de la funcionalidad de Calendario en nuestra aplicación web.</string>
     <string name="notification_map_restricted">Inicia sesión o crea una cuenta para disfrutar de la funcionalidad de Mapa en nuestra aplicación web, para tener una visión global de todas tus alarmas.</string>
+    <string name="notification_warning">Advertencia</string>
+    <string name="notification_redirect_login">A continuación se abrirá un enlace en el navegador para que inicies sesión en nuestra aplicación web.</string>
+    <string name="form_alarm_name">Titulo de la alarma</string>
+    <string name="alarm_date_label">Fecha:</string>
+    <string name="alarm_date">Fecha</string>
+    <string name="repeat_alarm">Repetir</string>
+    <string name="repeat_alarm_label">Repetir:</string>
+    <string name="ring_alarm">Alarma</string>
+    <string name="ring_alarm_label">Alarma:</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_create">Crear</string>
+    <string name="button_accept">Aceptar</string>
 </resources>
