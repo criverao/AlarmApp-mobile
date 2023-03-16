@@ -7,9 +7,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -29,8 +29,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="16dp" >
+            android:layout_height="match_parent" >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,13 +38,46 @@
 
                 <TextView
                     android:id="@+id/textAlarmDateLabel"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/alarm_date_label"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/text_view_date_1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/formfield"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textAlarmHourLabel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hora:"
+                    android:textSize="20sp" />
+
+                <!--<TimePicker
+                    android:id="@+id/txtAlbumDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false" />-->
+                <TextView
+                    android:id="@+id/text_view_timepicker"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
@@ -66,7 +98,7 @@
 
                 <TextView
                     android:id="@+id/textRepeat"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:text="@string/repeat_alarm_label"/>
@@ -93,7 +125,7 @@
 
                 <TextView
                     android:id="@+id/textAlertAlarm"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:text="@string/ring_alarm_label" />
@@ -108,6 +140,33 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textAlarmLastLabel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Duración:"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_view_date_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/formfield"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>-->
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -119,7 +178,7 @@
 
                 <TextView
                     android:id="@+id/textLocation"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:text="Ubicación:" />

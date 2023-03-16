@@ -1,17 +1,22 @@
 package com.example.alarmapp.ui.alarms
 
 import android.app.DatePickerDialog
+import android.app.TimePickerDialog
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.alarmapp.R
 import com.example.alarmapp.databinding.FragmentCreateAlarmBinding
+import com.google.android.material.datepicker.MaterialDatePicker.InputMode
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.MaterialTimePicker.INPUT_MODE_KEYBOARD
+import com.google.android.material.timepicker.TimeFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -57,6 +62,27 @@ class CreateAlarmFragment : Fragment() {
                     cal.get(Calendar.DAY_OF_MONTH)
                 ).show()
             }
+        }
+
+        val textviewTimePicker: TextView?
+
+        textviewTimePicker = binding.textViewTimepicker
+
+        val mTimePicker: TimePickerDialog
+        val mcurrentTime = Calendar.getInstance()
+        val hour = mcurrentTime.get(Calendar.HOUR_OF_DAY)
+        val minute = mcurrentTime.get(Calendar.MINUTE)
+
+        mTimePicker = TimePickerDialog(context,
+            { _, hourOfDay, minute -> textviewTimePicker.text =
+                String.format("%d : %d", hourOfDay, minute, INPUT_MODE_KEYBOARD) },
+            hour, minute, false
+        )
+
+        mTimePicker.setTitle("Hora")
+
+        textviewTimePicker.setOnClickListener {
+            mTimePicker.show()
         }
 
         ArrayAdapter.createFromResource(
